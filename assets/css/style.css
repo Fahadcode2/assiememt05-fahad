@@ -1,0 +1,279 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(/assets/images/banner.jpg);
+    background-size: cover;
+    background-position: center; 
+    position: relative;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 40px 0px;
+    padding: 20px 18px 0px;
+}
+nav a{
+    text-decoration: none;
+    color: #000;
+    font-size: 25px;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+nav ul{
+    list-style: none;
+}
+nav ul li{
+    float: left;
+}
+nav ul li a{
+    text-decoration: none;
+    margin: 5px 10px;
+    font-size: 20px;
+    color: #000;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+nav ul li a:hover{
+    border-bottom: 1.5px solid #000;
+    padding-bottom: 5px;
+}
+.wrapper{
+  width: 50%;
+  height: 400px; 
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.wrapper h1{
+    text-transform: capitalize;
+    font-size: 28px;
+    color: aliceblue;
+    background-color: rgba(5, 5, 5, 0.555);
+    padding: 10px 25px;
+    border-bottom: 2.5px solid #000;
+}
+.wrapper h1 span{
+    color: rgb(36, 13, 13);
+}
+.wrapper p{
+    font-size: 20px;
+    color: #000;
+    text-align: justify;
+    padding: 30px 0px;
+}
+.wrapper .btn , main .about .content .right .btn{
+    display: inline-block;
+    text-decoration: none;
+    background-color: darkorange;
+    padding: 15px 45px;
+    color: #2b2929;
+    border-radius: 20px;
+    text-transform: capitalize;
+}
+main .about h2{
+    font-size: 30px;
+    color: #000;
+    margin: 40px 0px;
+    border-bottom: 4px solid #000;
+    display: inline-block;
+    border-width: 10%;
+    text-align: center;
+}
+main .about .content{
+    display: flex;
+    width: 100%;
+}
+main .about .content .left{
+    width: 60%;
+    height: 80vh;
+    overflow: hidden;
+    position: relative;
+    padding: 10px;
+}
+main .about .left .ball{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #b0bd6a;
+    position: relative
+}
+main .about .left .fst{
+    background-color: rgb(79, 221, 209);
+    position: absolute;
+    left: 40px;
+    top: 20px;
+}
+main .about .left .team{
+    background-color: rgba(0, 195, 255, 0);
+    position: absolute;
+    right: 8px;
+    top: 158px; 
+    overflow: hidden; 
+}
+main .about .left .team img{
+    width: 100%;
+}
+main .about .left .last{
+    background-color: rgb(194, 197, 37);
+    position: absolute;
+    right: 100px;
+    bottom: 80px;
+}
+main .about .content .right{
+    padding-left: 120px;
+}
+main .about .content .right h2{
+    font-size: 50px;
+    color: #2b2929;
+    font-weight: 500;
+    margin: 10px 0px;
+}
+main .about .content .right p{
+    color: #000;
+    font-size: 20px;
+    text-indent: 5px;
+    padding: 20px 5px;
+    line-height: 20px;
+}
+.contact{
+    width: 100%;
+    max-width: 1400px;
+    height: 160vh;
+    overflow: hidden;
+}
+.contact h2{
+    font-size: 50px;
+    text-align: center;
+    color: #2b2929;
+    margin: 30px 0px;
+}
+.contact p{
+    color: #000;
+    font-size: 20px;
+    text-align: center;
+}
+.contact .cbox{
+    max-width: 1400px;
+    height: 50vh;
+    background-color: #464545;
+    margin-top: 30px;
+}
+.contact .cbox .ibox{
+    width: 320px;
+    height: auto;
+    text-align: center;
+    padding: 30px 0px;
+    float: left;
+}
+.contact .cbox .ibox .icon{
+    margin: 0 auto;
+    padding: 20px 0px;
+    color: orangered; 
+}
+.contact .cbox .ibox h2{
+    font-size: 28px;
+    color: orangered;
+    text-align: center;
+}
+.contact .cbox .ibox h3{
+    font-size: 20px;
+    color: #fff;
+    text-align: center 
+}
+.contact .cbtn{
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+}
+.sevices{
+    width: 100%;
+    height: 110vh;
+}
+.sevices h2{
+    text-align: center;
+    color: #464545;
+    font-size: 50px;
+    margin: 45px 0px;
+    font-weight: 600;
+    padding:30px 0px 0px;
+}
+.sevices .cser{
+    width: 90%;
+    height: 80vh;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+.sevices .sevbox{
+    width: 23%;
+    height: 350px;
+    float: left;
+    margin-right:2% ;
+}
+.sevices .sevbox span{
+    width: 160px;
+    height: 160px;
+    border-radius: 15px;
+    display: block;
+    background-color:#F9F871;
+    position: relative;
+    padding: 30px;
+    margin:25px auto;
+}
+.sevices .sevbox span img{
+    width: 40%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.sevices .sevbox h6{
+    font-size: 25px;
+    color: #000;
+    text-align: center;
+    font-weight: 700;
+    padding: 0px 0px 15px;
+}
+.sevices .sevbox p{
+    font-size: 12px;
+    color: #2b2929;
+    text-align: center;
+}
+.sevices .sevbox .senserr{
+    width: 100px;
+    height: 100px;
+}
+.sevices .cser .sevbox .inside{
+    margin-top: 140px;
+}
+footer{
+    width: 100%;
+    height: 70px;
+    background-color: purple;
+}
+footer div{
+    width: 50px;
+    margin: 0 auto;
+}
+footer div a{
+    color: #000;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+}
+footer h1{
+    text-align: center;
+}
+
+
+
+
+
